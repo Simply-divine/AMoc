@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 class FIrstLook extends JFrame implements ActionListener {
-JButton b1=new JButton("click");
+JButton b1 =new JButton("click");
     JTextField t1 = new JTextField("click b   utton");
 FIrstLook(){
     b1.setBounds(100,300,100,40);
