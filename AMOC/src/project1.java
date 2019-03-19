@@ -1,10 +1,11 @@
 //sample project....just for basic testing
-import java.awt.*;
-import java.awt.event.*;
+
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 class FIrstLook extends JFrame implements ActionListener {
 JButton b1=new JButton("click");
-JTextField t1=new JTextField("click button");
+    JTextField t1 = new JTextField("click b   utton");
 FIrstLook(){
     b1.setBounds(100,300,100,40);
     setSize(600,600);
