@@ -9,7 +9,7 @@ public class project1 extends javax.swing.JFrame {
 
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+
     private void initComponents() {
 
         jButton3 = new javax.swing.JButton();
@@ -128,14 +128,14 @@ public class project1 extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>                        
+    }
 
     private void lActionPerformed(java.awt.event.ActionEvent evt) {
 
     }
 
     private void jb0ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,11 +148,11 @@ public class project1 extends javax.swing.JFrame {
     }
 
     private void jb3ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
     }
 
     private void jb1ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
     }
     Boolean check(){
         if(current==0)
@@ -245,7 +245,7 @@ public class project1 extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify                     
+
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -257,7 +257,7 @@ public class project1 extends javax.swing.JFrame {
     private javax.swing.JRadioButton jb3;
     private javax.swing.ButtonGroup jbg;
     private javax.swing.JTextField l;
-    // End of variables declaration                   
+
 }
 
 
