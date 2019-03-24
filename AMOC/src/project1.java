@@ -8,8 +8,6 @@ public class project1 extends javax.swing.JFrame {
         set();
         mySettings();
     }
-
-
     @SuppressWarnings("unchecked")
 
     private void initComponents() {
@@ -46,11 +44,7 @@ public class project1 extends javax.swing.JFrame {
 
         messageField.setEditable(false);
         messageField.setText("your result is:");
-        messageField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                messageFieldActionPerformed(evt);
-            }
-        });
+
 
         javax.swing.GroupLayout messageLayout = new javax.swing.GroupLayout(message.getContentPane());
         message.getContentPane().setLayout(messageLayout);
@@ -75,45 +69,12 @@ public class project1 extends javax.swing.JFrame {
                                 .addComponent(resultDisplay, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
                                 .addContainerGap())
         );
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jLabel1.setText("online test on java");
-
-        l.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lActionPerformed(evt);
-            }
-        });
-
         jbg.add(jb0);
-        jb0.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb0ActionPerformed(evt);
-            }
-        });
-
         jbg.add(jb1);
-        jb1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb1ActionPerformed(evt);
-            }
-        });
-
         jbg.add(jb2);
-        jb2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb2ActionPerformed(evt);
-            }
-        });
-
         jbg.add(jb3);
-        jb3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb3ActionPerformed(evt);
-            }
-        });
-
         jButton1.setText("next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +90,6 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton4);
-        jButton4.setLabel("bookmark");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -137,7 +97,6 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton5);
-        jButton5.setLabel("bookmark");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -145,7 +104,6 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton7);
-        jButton7.setLabel("bookmark");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -153,7 +111,6 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton8);
-        jButton8.setLabel("bookmark");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -161,7 +118,6 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton9);
-        jButton9.setLabel("bookmark");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -169,7 +125,6 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton10);
-        jButton10.setLabel("bookmark");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
@@ -177,7 +132,6 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton11);
-        jButton11.setLabel("bookmark");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
@@ -185,7 +139,6 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton12);
-        jButton12.setLabel("bookmark");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
@@ -193,7 +146,6 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton13);
-        jButton13.setLabel("bookmark");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
@@ -308,13 +260,7 @@ public class project1 extends javax.swing.JFrame {
         pack();
     }
 
-    private void lActionPerformed(java.awt.event.ActionEvent evt) {
 
-    }
-
-    private void jb0ActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
 
@@ -332,17 +278,6 @@ public class project1 extends javax.swing.JFrame {
 
     }
 
-    private void jb3ActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void jb1ActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void jb2ActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         count++;
@@ -448,9 +383,7 @@ public class project1 extends javax.swing.JFrame {
         set();
     }
 
-    private void messageFieldActionPerformed(java.awt.event.ActionEvent evt) {
 
-    }
     void mySettings(){
         jButton4.setVisible(false);
         jButton5.setVisible(false);
