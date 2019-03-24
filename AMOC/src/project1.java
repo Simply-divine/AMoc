@@ -44,8 +44,6 @@ public class project1 extends javax.swing.JFrame {
 
         messageField.setEditable(false);
         messageField.setText("your result is:");
-
-
         javax.swing.GroupLayout messageLayout = new javax.swing.GroupLayout(message.getContentPane());
         message.getContentPane().setLayout(messageLayout);
         messageLayout.setHorizontalGroup(
@@ -69,12 +67,17 @@ public class project1 extends javax.swing.JFrame {
                                 .addComponent(resultDisplay, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
                                 .addContainerGap())
         );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
         jLabel1.setText("online test on java");
+
+        l.setEditable(false);
         jbg.add(jb0);
         jbg.add(jb1);
         jbg.add(jb2);
         jbg.add(jb3);
+
         jButton1.setText("next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,7 +164,7 @@ public class project1 extends javax.swing.JFrame {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
                                 .addComponent(l, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jButton7, javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(jButton8, javax.swing.GroupLayout.Alignment.TRAILING)))
@@ -179,17 +182,21 @@ public class project1 extends javax.swing.JFrame {
                                                         .addGroup(layout.createSequentialGroup()
                                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                         .addGroup(layout.createSequentialGroup()
-                                                                                .addComponent(jb0, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                                                .addGap(72, 72, 72))
+                                                                                .addComponent(jButton1)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 714, Short.MAX_VALUE))
                                                                         .addGroup(layout.createSequentialGroup()
+                                                                                .addGap(46, 46, 46)
                                                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                        .addComponent(jButton1)
-                                                                                        .addComponent(jb2))
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(jb1)
-                                                                        .addComponent(jb3)
-                                                                        .addComponent(jButton2))
+                                                                                        .addGroup(layout.createSequentialGroup()
+                                                                                                .addComponent(jb0, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                                                .addComponent(jb1))
+                                                                                        .addGroup(layout.createSequentialGroup()
+                                                                                                .addComponent(jb2)
+                                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                                                .addComponent(jb3)))
+                                                                                .addGap(94, 94, 94)))
+                                                                .addComponent(jButton2)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                                                 .addGap(0, 0, Short.MAX_VALUE)
@@ -225,41 +232,41 @@ public class project1 extends javax.swing.JFrame {
                                                 .addComponent(jButton8)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createSequentialGroup()
-                                                .addGap(35, 35, 35)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(jb1)
-                                                        .addComponent(jb0))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(jb3)
-                                                        .addComponent(jb2)))
-                                        .addGroup(layout.createSequentialGroup()
                                                 .addGap(14, 14, 14)
                                                 .addComponent(jButton9)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jButton10)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jButton10)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGap(18, 18, 18)
+                                                                .addComponent(jb4)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                                        .addComponent(jButton1)
+                                                                        .addComponent(jButton2))
+                                                                .addContainerGap())
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGap(5, 5, 5)
+                                                                .addComponent(jButton11)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(jButton12)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                .addComponent(jButton13)
+                                                                .addGap(0, 200, Short.MAX_VALUE))))
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGap(18, 18, 18)
-                                                .addComponent(jb4)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(jButton1)
-                                                        .addComponent(jButton2))
-                                                .addContainerGap())
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(5, 5, 5)
-                                                .addComponent(jButton11)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jButton12)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jButton13)
-                                                .addGap(0, 27, Short.MAX_VALUE))))
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jb0)
+                                                        .addComponent(jb1))
+                                                .addGap(35, 35, 35)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(jb2)
+                                                        .addComponent(jb3))
+                                                .addGap(8, 8, 8))))
         );
 
         pack();
     }
-
 
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -318,7 +325,7 @@ public class project1 extends javax.swing.JFrame {
             messageField.setVisible(true);
             resultDisplay.setVisible(true);
             message.setVisible(true);
-            message.setSize(300,300);
+            message.setSize(450,300);
             resultDisplay.setText("no. of correct answers:"+counter);
 
         }
