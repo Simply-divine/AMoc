@@ -2,14 +2,19 @@
 public class project1 extends javax.swing.JFrame {
     static int counter=0,current=0,count=0,y=0,now;
     int[] m = new int[10];
+    String name,password;
+
 
     public project1() {
+
         initComponents();
         set();
         mySettings();
     }
-    @SuppressWarnings("unchecked")
 
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jButton3 = new javax.swing.JButton();
@@ -19,6 +24,13 @@ public class project1 extends javax.swing.JFrame {
         message = new javax.swing.JDialog();
         messageField = new javax.swing.JTextField();
         resultDisplay = new javax.swing.JLabel();
+        jDialog1 = new javax.swing.JDialog();
+        RollNo = new javax.swing.JLabel();
+        RollNoField = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        PasswordField = new javax.swing.JPasswordField();
+        enterButton = new javax.swing.JButton();
+        PassWordId = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         l = new javax.swing.JTextField();
         jb0 = new javax.swing.JRadioButton();
@@ -39,11 +51,22 @@ public class project1 extends javax.swing.JFrame {
         jb4 = new javax.swing.JRadioButton();
 
         jButton3.setText("jButton3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jRadioButton1.setText("jRadioButton1");
 
         messageField.setEditable(false);
         messageField.setText("your result is:");
+        messageField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                messageFieldActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout messageLayout = new javax.swing.GroupLayout(message.getContentPane());
         message.getContentPane().setLayout(messageLayout);
         messageLayout.setHorizontalGroup(
@@ -68,15 +91,105 @@ public class project1 extends javax.swing.JFrame {
                                 .addContainerGap())
         );
 
+        RollNo.setText("RollNo");
+
+        RollNoField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RollNoFieldActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("PassWord");
+
+        PasswordField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PasswordFieldActionPerformed(evt);
+            }
+        });
+
+        enterButton.setText("start");
+        enterButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enterButtonActionPerformed(evt);
+            }
+        });
+
+        PassWordId.setEditable(false);
+        PassWordId.setText("enter your password and id");
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+                jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jDialog1Layout.createSequentialGroup()
+                                .addGap(29, 29, 29)
+                                .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(PassWordId, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(enterButton)
+                                        .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addComponent(RollNoField, javax.swing.GroupLayout.DEFAULT_SIZE, 333, Short.MAX_VALUE)
+                                                .addComponent(jLabel2)
+                                                .addComponent(RollNo, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(PasswordField)))
+                                .addContainerGap(38, Short.MAX_VALUE))
+        );
+        jDialog1Layout.setVerticalGroup(
+                jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jDialog1Layout.createSequentialGroup()
+                                .addGap(14, 14, 14)
+                                .addComponent(PassWordId, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(RollNo, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(RollNoField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(33, 33, 33)
+                                .addComponent(jLabel2)
+                                .addGap(18, 18, 18)
+                                .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                                .addComponent(enterButton)
+                                .addContainerGap())
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("OnlineTestOfJava");
 
         jLabel1.setText("online test on java");
 
         l.setEditable(false);
+        l.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lActionPerformed(evt);
+            }
+        });
+
         jbg.add(jb0);
+        jb0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb0ActionPerformed(evt);
+            }
+        });
+
         jbg.add(jb1);
+        jb1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+
+            }
+        });
+
         jbg.add(jb2);
+        jb2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+
+            }
+        });
+
         jbg.add(jb3);
+        jb3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+
+            }
+        });
 
         jButton1.setText("next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -93,6 +206,7 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton4);
+        jButton4.setLabel("bookmark");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -100,6 +214,7 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton5);
+        jButton5.setLabel("bookmark");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -107,6 +222,7 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton7);
+        jButton7.setLabel("bookmark");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -114,6 +230,7 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton8);
+        jButton8.setLabel("bookmark");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -121,6 +238,7 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton9);
+        jButton9.setLabel("bookmark");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -128,6 +246,7 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton10);
+        jButton10.setLabel("bookmark");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
@@ -135,6 +254,7 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton11);
+        jButton11.setLabel("bookmark");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
@@ -142,6 +262,7 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton12);
+        jButton12.setLabel("bookmark");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
@@ -149,6 +270,7 @@ public class project1 extends javax.swing.JFrame {
         });
 
         bookMarkGroup.add(jButton13);
+        jButton13.setLabel("bookmark");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
@@ -266,24 +388,34 @@ public class project1 extends javax.swing.JFrame {
         );
 
         pack();
+    }// </editor-fold>                        
+
+    private void lActionPerformed(java.awt.event.ActionEvent evt) {
+
     }
 
+    private void jb0ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
 
         if(check())
         {  counter++;}
-        current++;
         jb4.setSelected(true);
+        current++;
         set();
+
         if(current==9)
         {
+
             jButton1.setEnabled(false);
             jButton2.setText("Result");
 
         }
 
     }
+
 
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -322,10 +454,15 @@ public class project1 extends javax.swing.JFrame {
         }
         if(current==9)
         {
+            if(check())
+            {
+                counter++;
+            }
+
             messageField.setVisible(true);
             resultDisplay.setVisible(true);
             message.setVisible(true);
-            message.setSize(450,300);
+            message.setSize(300,300);
             resultDisplay.setText("no. of correct answers:"+counter);
 
         }
@@ -333,7 +470,7 @@ public class project1 extends javax.swing.JFrame {
     }
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
-
+        // TODO add your handling code here:
         now=current;
         current=m[0];
         set();
@@ -344,54 +481,101 @@ public class project1 extends javax.swing.JFrame {
         now=current;
         current=m[1];
         set();
-
+        // TODO add your handling code here:
     }
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {
         now=current;
         current=m[2];
-        set();
+        set();// TODO add your handling code here:
     }
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {
         now=current;
         current=m[3];
-        set();
+        set();// TODO add your handling code here:
     }
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {
         now=current;
         current=m[4];
-        set();
+        set();// TODO add your handling code here:
     }
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {
         now=current;
         current=m[5];
         set();
-
+// TODO add your handling code here:
     }
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {
         now=current;
         current=m[6];
-        set();
+        set();// TODO add your handling code here:
     }
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {
         now=current;
         current=m[7];
-        set();
+        set(); // TODO add your handling code here:
     }
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {
         now=current;
         current=m[8];
-        set();
+        set(); // TODO add your handling code here:
     }
 
+    private void messageFieldActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
 
+    private void PasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void RollNoFieldActionPerformed(java.awt.event.ActionEvent evt) {
+
+        // TODO add your handling code here:
+    }
+
+    private void enterButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        name=RollNoField.getText();
+        password=String.valueOf(PasswordField.getPassword());
+
+        if(name.equals("hardik")&&password.equals("abcd"))
+        {
+            l.setVisible(true);
+            jLabel1.setVisible(true);
+            jb0.setVisible(true);
+            jb1.setVisible(true);
+            jb2.setVisible(true);
+            jb3.setVisible(true);
+            jButton1.setVisible(true);
+            jButton2.setVisible(true);
+            jDialog1.dispose();
+
+        }
+        else
+        {    PassWordId.setText("wrong id or password");
+            RollNoField.setText("");
+            PasswordField.setText("");
+        }
+    }
     void mySettings(){
+        l.setVisible(false);
+        jLabel1.setVisible(false);
+        jb0.setVisible(false);
+        jb1.setVisible(false);
+        jb2.setVisible(false);
+        jb3.setVisible(false);
+        jButton1.setVisible(false);
+        jButton2.setVisible(false);
         jButton4.setVisible(false);
         jButton5.setVisible(false);
         jButton7.setVisible(false);
@@ -404,6 +588,9 @@ public class project1 extends javax.swing.JFrame {
         jb4.setSelected(true);
         jb4.setVisible(false);
         message.setVisible(false);
+        jDialog1.setVisible(true);
+        jDialog1.setSize(500,300);
+        jDialog1.setAlwaysOnTop(true);
 
 
     }
@@ -500,7 +687,12 @@ public class project1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify                     
+    private javax.swing.JTextField PassWordId;
+    private javax.swing.JPasswordField PasswordField;
+    private javax.swing.JLabel RollNo;
+    private javax.swing.JTextField RollNoField;
     private javax.swing.ButtonGroup bookMarkGroup;
+    private javax.swing.JButton enterButton;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -513,7 +705,9 @@ public class project1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jb0;
     private javax.swing.JRadioButton jb1;
@@ -525,5 +719,5 @@ public class project1 extends javax.swing.JFrame {
     private javax.swing.JDialog message;
     private javax.swing.JTextField messageField;
     private javax.swing.JLabel resultDisplay;
-
+    // End of variables declaration                   
 }
