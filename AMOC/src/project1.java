@@ -14,7 +14,6 @@ public class project1 extends javax.swing.JFrame {
 
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jButton3 = new javax.swing.JButton();
